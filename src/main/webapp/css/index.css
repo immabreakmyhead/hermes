@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.sidebar-logo {
+	width: 40px;
+	height: 40px;
+}
+
+.user-info {
+	line-height: 1.2;
+}
+
+.user-role {
+	font-size: medium;
+	font-weight: BOLD;
+}
+
+.big-card, .profile-card {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.big-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 32px;
+}
+
+.big-card .day {
+	font-size: 96px;
+	font-weight: bold;
+}
+
+.big-card .month-year {
+	font-size: 24px;
+}
+
+.big-card .icon {
+	font-size: 148px;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.big-card .icon {
+		font-size: 100px;
+		margin-right: 0px;
+	}
+}
+
+.date-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-wrapper {
+	display: flex;
+	align-items: stretch;
+}
+
+.card-wrapper>.card {
+	flex: 1;
+}
+
+.next-bill {
+	font-size: 1rem;
+	color: #6c757d;
+}
+
+.bill-card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.paid {
+	background-color: var(--success);
+}
+
+.unpaid {
+	background-color: var(--warning);
+}
+
+.expired {
+	background-color: var(--error);
+}
